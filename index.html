@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Шахматы Онлайн</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.6.1/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+</head>
+
+<body>
+    <div id="auth">
+        <div id="window-reg">
+            <label for="reg-login">
+                <div>Логин</div> 
+                  <input type="text" id="reg-login">
+              </label>
+              <label for="reg-email">
+                <div>Email</div> 
+                  <input type="text" id="reg-email">
+              </label>
+              <label for="reg-password">
+                 <div>Пароль</div>
+                  <input type="password" id="reg-password">
+              </label>
+              <div class="reg-error"></div>
+              <div class="button">Регистрация</div>
+              <a onclick="$('#window-reg').hide(400); $('#window-auth').show(200); ">Войти</a>  
+        </div>
+        <div id="window-auth">
+            <label for="login">
+              <div>Логин</div> 
+                <input type="text" id="login">
+            </label>
+            <label for="password">
+               <div>Пароль</div>
+                <input type="text" id="password">
+            </label>
+            <div id="auth-error"></div>
+            <div class="button">Вход</div>
+            <a onclick="$('#window-auth').hide(400); $('#window-reg').show(200);">Регистрация</a>
+        </div>
+    </div>
+    <div id="menu">
+        <fieldset>
+            <legend>Меню</legend>
+        <div class="button" data-name="create">Создать игру</div>
+        <div class="button" data-name="connect">Подключиться к игре</div>
+        <div class="button" data-name="setting">Настройки</div>
+        <div class="button" data-name="exit">Выход</div>
+        </fieldset>
+        
+    </div>
+    <div id="play">
+        <div id="panel">Панель</div>
+        <div id="board">
+            <table>
+                <tr>
+                    <th>a</th>
+                    <th>b</th>
+                    <th>c</th>
+                    <th>d</th>
+                    <th>e</th>
+                    <th>f</th>
+                    <th>g</th>
+                    <th>h</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+    
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
