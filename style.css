@@ -1,6 +1,6 @@
 th {
-    width: 50px;
-    height: 50px;
+    width: 78px;
+    height: 78px;
 }
 .figure{
     cursor: pointer;
@@ -24,13 +24,10 @@ body>div,#window-reg{
 }
 
 .black{
-    background: black;
-    color: white;
+    background: #b58863 ;
 }
 .white{
-    color: black;
-
-    background: white;
+    background: #f0d9b5;
 }
 body>div{
     text-align: center;
